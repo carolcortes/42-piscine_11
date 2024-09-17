@@ -12,20 +12,38 @@
 
 #include <unistd.h>
 
-void ft_putnbr(int nb)
+void	print_nb_by_unit(int nb)
 {
-	int	sign;
+	char	n;
 
-	
 	if (nb < 0)
 	{
-		sign = -1;
+		write(1, "-", 1);
+		nb = -nb;
 	}
-
+	if (nb >= 10)
+	{
+		print_nb_by_unit(nb / 10);
+		nb = nb % 10;
+	}
+	n = nb + '0';
+	if (nb < 10)
+		write(1, &n, 1);
 }
 
-int	main(void)
+void	ft_putnbr(int nb)
+{
+	if (nb == -2147483648)
+		write(1, "-2147483648", 11);
+	else if (nb == 0)
+		write(1, "0", 1);
+	else
+		print_nb_by_unit(nb);
+}
+
+/* int	main(void)
 {
 	ft_putnbr(-42);
 	return (42);
 }
+ */
