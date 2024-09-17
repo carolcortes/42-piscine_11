@@ -45,7 +45,7 @@ total 1
 > Oh yeah, mooore...
 
 Turn-in: `ex02/exo2.tar` <br>
-Description: Regular and linked files created via command line, with specific names, changing the permissions, sizes and last updated dates.
+Description: Regular and symbolic linked files created via command line, with specific names, changing the permissions, sizes and last updated dates.
 
 ```bash
 > ls -l
