@@ -42,15 +42,17 @@ int	is_valid_base(char *base)
 void	print_nb_by_unit(int nb, char *base, int base_len)
 {
 	char	n;
+	long	long_nb;
 
+	long_nb = nb;
 	if (nb < 0)
 	{
 		write(1, "-", 1);
-		nb = -nb;
+		long_nb = -long_nb;
 	}
-	if (nb >= base_len)
-		print_nb_by_unit(nb / base_len, base, base_len);
-	n = base[nb % base_len];
+	if (long_nb >= base_len)
+		print_nb_by_unit(long_nb / base_len, base, base_len);
+	n = base[long_nb % base_len];
 	write(1, &n, 1);
 }
 
