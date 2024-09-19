@@ -27,7 +27,7 @@ Description: Function that counts and returns the number of characters in a stri
 
 Turn-in: `ex01/ft_putstr.c` <br>
 
-<p style="color: gray">Allowed Functions: None</p>
+<p style="color: gray">Allowed Functions: write</p>
 
 Description: Function that displays a string of characters on the standard output.
 
@@ -39,7 +39,7 @@ Description: Function that displays a string of characters on the standard outpu
 
 Turn-in: `ex01/ft_putnbr.c` <br>
 
-<p style="color: gray">Allowed Functions: None</p>
+<p style="color: gray">Allowed Functions: write</p>
 
 Description: Function that displays the number `int` entered as a parameter.
 
@@ -77,7 +77,7 @@ Description: Function that converts the initial portion of the string pointed by
 
 Turn-in: `ex01/ft_putnbr_base.c` <br>
 
-<p style="color: gray">Allowed Functions: None</p>
+<p style="color: gray">Allowed Functions: write</p>
 
 Description: Function that that displays a number in a base system in the terminal.
 
