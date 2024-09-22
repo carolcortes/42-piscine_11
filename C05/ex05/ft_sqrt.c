@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_fibonacci.c                                     :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cade-oli <cade-oli@42porto.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/21 16:31:47 by cade-oli          #+#    #+#             */
-/*   Updated: 2024/09/22 18:40:08 by cade-oli         ###   ########.fr       */
+/*   Created: 2024/09/22 17:53:37 by cade-oli          #+#    #+#             */
+/*   Updated: 2024/09/22 17:57:15 by cade-oli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_fibonacci(int index)
+int	ft_sqrt(int nb)
 {
-	if (index < 0)
-		return (-1);
-	else if (index <= 1)
-		return (index);
-	return ft_fibonacci(index - 1) + ft_fibonacci(index - 2);
+	int	i;
+
+	while (i < )
 }
 
 int	main(void)
 {
-	printf("index = 5: %d\n", ft_fibonacci(5));
-	printf("index = -1: %d\n", ft_fibonacci(-1));
-	printf("index = 0: %d\n", ft_fibonacci(0));
+	printf("16: %d\n", ft_sqrt(16));
+	printf("25: %d\n", ft_sqrt(25));
+	printf("0: %d\n", ft_sqrt(0));
+	printf("7: %d\n", ft_sqrt(7));
 	return (42);
 }
